@@ -1,0 +1,18 @@
+{
+	"name": "kalisto-mfgost"
+	"authors": [
+		"kali100.ru"
+	],
+	"description": "mfgost - kali100.ru",
+	"main": "",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/themekalisto-design/libs/",
+    "test",
+    "tests"
+  ]
+  }

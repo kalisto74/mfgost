@@ -1,0 +1,80 @@
+/*==========  Desktop First  ==========*/
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px)
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px)
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px)
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px)
+
+/*==========  Mobile First  ==========*/
+// 425
+//@media (max-width: 425px)
+
+// 320
+@media (max-width: 320px)
+  h1.display-3
+    font-size: 2rem
+  .card-columns
+    column-count: 1
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  h1.display-3
+    font-size: 2rem
+  .card-columns
+    column-count: 1
+  .border-right
+    border-right: 0px!important
+  .brand
+    text-align: center
+  .navbar-brand
+    margin: 0
+  .header-top
+    .nameLogo
+      font-size: 0.7rem
+      .decrip
+       font-size: 0.6rem
+    .phone
+      text-align: center
+      font-size: 0.8rem
+  footer 
+    font-size: 1.2rem
+    line-height: 2.2rem
+    .footer-top
+      background: $colorgrey none repeat scroll 0 0
+      h6 
+        font-size: 1.6rem
+        font-weight: 600
+      nav
+        margin: 0 0 20px 0
+  .btn
+    margin: 7px
+  
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px)
+  .header-top
+    .phone
+      font-size: 0.9rem
+    .btn-sm
+      padding: 10px 5px
+      font-size: 12px
+      letter-spacing: 1px
+  .uk-hidden-small
+    display: none !important
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+  .header-top
+    .phone
+      font-size: 0.9rem
+
+// Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px)
+
