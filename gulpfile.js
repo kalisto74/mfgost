@@ -4,14 +4,16 @@
 
 /* параметры для gulp-autoprefixer */
 var autoprefixerList = [
-  'Chrome >= 45',
-  'Firefox ESR',
-  'Edge >= 12',
-  'Explorer >= 10',
-  'iOS >= 9',
-  'Safari >= 9',
-  'Android >= 4.4',
-  'Opera >= 30'
+  "last 1 major version",
+  ">= 1%",
+  "Chrome >= 45",
+  "Firefox >= 38",
+  "Edge >= 12",
+  "Explorer >= 10",
+  "iOS >= 9",
+  "Safari >= 9",
+  "Android >= 4.4",
+  "Opera >= 30"
 ];
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
@@ -35,7 +37,7 @@ var path = {
          'assets/themekalisto-design/libs/animateNumber/jquery.animateNumber.min.js',
          'assets/themekalisto-design/libs/selectize/dist/js/standalone/selectize.min.js',
          'assets/themekalisto-design/libs/jquery.countdown.min.js',
-         'assets/themekalisto-design/js/calculate.js',
+         //'assets/themekalisto-design/js/calculate.js',
          'assets/themekalisto-design/libs/wow.min.js',
          'assets/themekalisto-design/libs/modernizr/modernizr.js',
          'assets/themekalisto-design/js/common.js'
@@ -55,7 +57,7 @@ var path = {
 var gulp          = require('gulp'), 
     gutil         = require('gulp-util' ),
     sass          = require('gulp-sass'),
-    browsersync   = require('browser-sync'),
+    browsersync   = require('browser-sync').create(),
     concat        = require('gulp-concat'),
     uglify        = require('gulp-uglify'),
     cleancss      = require('gulp-clean-css'),
@@ -67,7 +69,7 @@ var gulp          = require('gulp'),
 
 // запуск сервера
 gulp.task('browser-sync', function () {
-  browsersync({
+  browsersync.init({
     server: {
       baseDir: './assets/themekalisto-design'
     },

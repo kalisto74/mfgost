@@ -421,93 +421,6 @@ button
     a 
       color: $primary
 
-/*	Калькулятор */
-.how-works
-  position: relative
-
-  .app-board
-    .nav-tabs
-      position: relative
-      margin: 40px auto
-      margin-bottom: 0
-      box-sizing: border-box
-    > div.app-board-inner > .nav-tabs
-      border: none
-
-  p.narrow
-    width: 60%
-    margin: 10px auto
-
-  .liner::before
-    height: 2px
-    background: #8c8a8a
-    position: absolute
-    width: 80%
-    margin: 0 auto
-    left: 0
-    right: 0
-    top: 50%
-    z-index: 1
-
-  .nav-tabs > li.active > a
-    color: $colordark
-    cursor: default
-    border: 0
-    border-bottom-color: transparent
-    outline: 0
-    &:hover, &:focus
-      color: $primary
-      cursor: default
-      border: 0
-      border-bottom-color: transparent
-      outline: 0
-
-  span.round-tabs
-    width: 70px
-    height: 70px
-    line-height: 70px
-    display: inline-block
-    border-radius: 100px
-    background: white
-    z-index: 2
-    position: absolute
-    left: 0
-    text-align: center
-    font-size: 25px
-    border: 2px solid $colordark
-    color: $colordark
-
-  li span.round-tabs:hover, li.active span.round-tabs, .process-steps li.ui-tabs-active a span.round-tabs
-    border: 2px solid $primary
-    color: $primary
-
-  span.round-tabs
-    border: 2px solid $colordark
-    color: $colordark
-
-  .nav-tabs > li
-    &.active > a span.round-tabs
-      background: $white
-    width: 20%
-    a
-      width: 70px
-      height: 70px
-      margin: 20px auto
-      border-radius: 100%
-      border: none
-      padding: 0
-      &:hover
-        background: transparent
-        border: none
-
-  .tab-pane
-    position: relative
-    padding-top: 50px
-
-  .btn
-    font-weight: 500
-    font-size: 16px
-
 
 /* owl.carousel */
 .owl-carousel
@@ -1050,6 +963,12 @@ button
     font-size: 0.9rem
 
 /* Parallax Section */
+.bg-1
+  background: #ffdda2
+  background: -webkit-radial-gradient(center,#ffdda2,#321101)
+  background: -o-radial-gradient(center,#ffdda2,#321101)
+  background: -moz-radial-gradient(center,#ffdda2,#321101)
+  background: radial-gradient(ellipse at center, #ffdda2, #321101)
 .ParalaxImage
   position: relative
   background-position: center
@@ -1059,7 +978,7 @@ button
   justify-content: center
   align-items: center
   text-align: center
-  background-attachment: fixed
+  background-attachment: scroll
 
 .parallax-section
   width: 100%
@@ -1089,7 +1008,7 @@ button
     background-position: top center
     background-size: cover
     background-repeat: no-repeat
-    background: rgba(#000,0.5) 
+    background: rgba(#000,0.5)
     h1 
       color: #fff
     .overl

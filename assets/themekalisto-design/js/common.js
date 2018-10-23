@@ -22,19 +22,8 @@ jQuery(document).ready(function () {
 		e.preventDefault();
 		var open = $(this).attr('data-easein');
 	})
-	
-	// dropdown
-	/*
-	$('.dropdown a.dropdown-toggle').click(function () {
-		location.href = $(this).attr('href');
-	});
-	*/
 
 	//Search
-	/*
-	$(".nino-search, #nino-searchForm .nino-close").click(function(){
-		$("#nino-searchForm").toggleClass("open");
-	});*/
 	if($(".search-box").length){
 		$("#search").on("click", function(){
 			$(".search-box").addClass("open")
@@ -60,12 +49,6 @@ jQuery(document).ready(function () {
 			}
 		}
   });
-
-	/* certificate --------- */
-	/*
-	$(".certificate-wrap > a")
-		.attr("href", $(".certificates a").attr("href"));
-	$(".certificates a:first").remove();*/
 
 	/* counter-- */
 	$(".chislo-item").waypoint(function() {
@@ -94,12 +77,6 @@ jQuery(document).ready(function () {
 	}, {
 		offset: '70%'
 	});
-
-	/* Grid-List -- */
-	/*
-	$('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-		$('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-	*/
 
 	/*--- OWLCAROUSEL -------------------------------------*/
 
@@ -200,22 +177,6 @@ jQuery(document).ready(function () {
 			}
 		});
 	});
-
-	/* ------------------ calc----------------- */
-	(function () {
-		$(".next-step").click(function (e) {
-			var $active = $('.nav-tabs li.active');
-			//$active.next().removeClass('disabled');
-			nextTab($active);
-		});
-	}());
-
-	(function nextTab(elem) {
-		$(elem).next().find('a[data-toggle="tab"]').click();
-	}());
-	(function prevTab(elem) {
-		$(elem).prev().find('a[data-toggle="tab"]').click();
-	}());
 
 }())
 

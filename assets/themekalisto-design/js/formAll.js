@@ -10,6 +10,7 @@ $('input[name="fz152"]').change(function(){
 	var form = response.form;
     if (response.success == true ) {
       $('#manufacter').modal('hide');
-      //$('#zvonok').modal('hide');
+      $('#coast').modal('hide');
+      $('#coastMebel').modal('hide');
 	}
   });
